@@ -1,0 +1,24 @@
+=== Add Sub Posts ===
+Contributors: saju79shyni
+Tags: wordpress
+Requires at least: 3.5.1
+Tested up to: 3.8.1
+Stable tag: 2.0.1
+
+== Description ==
+
+Add sub post is a plugin that allows you to easily add childern posts to created Custom_post_type 'project' under the
+custom taxonomy. This plugin allows you to create a childern post after publish a parent post(post_type='project').In single.php $args = array( 'posts_per_page' => 5, 'post_parent' => get_the_ID(), 'post_type'=>'tabs_children'); $myposts = get_posts( $args );foreach ( $myposts as $post ) : setup_postdata( $post );
+
+== Installation ==
+
+This section describes how to install the plugin and get it working.
+
+e.g.
+
+1. Upload `the directory "add-sub-posts"` to the `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+
+== Screenshots ==
+1.Add post under category.
+2.Add sub posts under parent post.
